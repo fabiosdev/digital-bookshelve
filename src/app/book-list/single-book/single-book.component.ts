@@ -25,10 +25,12 @@ export class SingleBookComponent implements OnInit {
     );
   }
 
-  // Le comportement récupère le livre demandé par son id grâce ) getSingleBook() et l'affiche dans le template
-
   onBack() {
     this.router.navigate(['/books']);
   }
+
+  // Le comportement récupère le livre demandé par son id grâce ) getSingleBook() et l'affiche dans le template
+
+
 
 }
