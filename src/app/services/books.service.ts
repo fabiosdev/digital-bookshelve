@@ -10,10 +10,10 @@ import DataSnapshot = firebase.database.DataSnapshot;
 export class BooksService {
 
   books: Book[] = [];
-  bookSubject = new Subject<Book[]>();
+  booksSubject = new Subject<Book[]>();
 
   emitBooks() {
-    this.bookSubject.next(this.books);
+    this.booksSubject.next(this.books);
   }
 
   // Méthode mise à disposition par firebase pour enregistrer la liste sur un node de la base de données (méthode set)
