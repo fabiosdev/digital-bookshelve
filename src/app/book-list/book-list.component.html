@@ -8,8 +8,8 @@
         (click)="onViewBook(i)">
         <h3 class="list-group-item-heading">
           {{ book.title }}
-          <button class="btn btn-default pull-right" (click)="onDeleteBook(book)">
-            <span class="glyphicon glyphicon-minus"></span>
+          <button class="btn btn-danger pull-right" (click)="onDeleteBook(book)">
+            <span>-</span>
           </button>
         </h3>
         <p class="list-group-item-text">{{ book.author }}</p>

@@ -7,14 +7,13 @@ import * as firebase from 'firebase';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'appli-book';
   constructor() {
     const firebaseConfig = {
       apiKey: "AIzaSyCbWKBYuzjOKudjEdUWW8HBTIw3Uv1Dee4",
       authDomain: "appli-book.firebaseapp.com",
       databaseURL: "https://appli-book.firebaseio.com",
       projectId: "appli-book",
-      storageBucket: "",
+      storageBucket: "gs://appli-book.appspot.com/",
       messagingSenderId: "834651242204",
       appId: "1:834651242204:web:b7630183913196cd"
     };

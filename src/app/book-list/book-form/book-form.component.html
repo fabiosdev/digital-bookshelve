@@ -18,8 +18,16 @@
                   class="form-control" formControlName="synopsis">
         </textarea>
       </div>
-      <button class="btn btn-success" [disabled]="bookForm.invalid"
-              type="submit">Enregistrer
+      <!-- Nouvelle section pour ajouter une image -->
+      <!-- Dès que l'utilisateur choisit un fichier, l'événement est déclenché et le fichier est uploadé.  Le texte "Fichier chargé !" est affiché lorsque  fileUploaded  est  true , et le bouton est désactivé quand le formulaire n'est pas valable ou quand  fileIsUploading  est  true . -->
+      <div class="form-group">
+          <h4>Ajouter une photo</h4>
+          <input type="file" (change)="detectFiles($event)"
+                 class="form-control" accept="image/*">
+          <p class="text-success" *ngIf="fileUploaded">Fichier chargé !</p>
+      </div>
+      <button class="btn btn-success" [disabled]="bookForm.invalid || fileIsUploading"
+            type="submit">Enregistrer
       </button>
 
     </form>
