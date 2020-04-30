@@ -22,7 +22,7 @@
     "bootstrap": "^4.3.1",
     "console": "^0.7.2",
     "firebase": "^6.2.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "output": "0.0.0",
     "popper.js": "^1.15.0",
     "rxjs": "~6.4.0",
